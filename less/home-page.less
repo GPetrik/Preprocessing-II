@@ -14,17 +14,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      .center ();
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 94%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 94%;
+      }
 
       img {
         border-radius: 10px;
@@ -62,10 +71,17 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .center ();
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        .center ();
+        width: 80%;
+      }
     } //closes destination
 
     .btn {
